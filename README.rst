@@ -9,18 +9,27 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+About
+=====
+
+This repository is a homage to the wonderfull super learning kit from keyestudio. I bought this kit and got a little frustrated from Copying and Pasting source code from the PDF, spending most time removing errors and reformating code. This repository is for everybody that would like to use this kit to full potential. All the examples from keyestudio are here plus some extra examples ported from various sources.
+
+
 How to build PlatformIO based project
 =====================================
 
 1. `Install PlatformIO <http://docs.platformio.org/en/stable/installation.html>`_
-2. Download `source code with examples <https://github.com/platformio/platformio-examples/archive/develop.zip>`_
-3. Extract ZIP archive
-4. Run these commands:
+2. Clone this git repository 
 
-.. code-block:: bash
+```
+git clone https://github.com/milovanderlinden/keyestudio_SLK_KS0079.git
+cd keyestudio_SLK_KS0079.git
+```
+
+3. Run these commands:
 
     # Change directory to example
-    > cd platformio-examples/atmelavr-and-arduino/arduino-blink
+    > 01_hello_world
 
     # Build project
     > platformio run
@@ -29,10 +38,10 @@ How to build PlatformIO based project
     > platformio run --target upload
 
     # Build specific environment
-    > platformio run -e flora8
+    > platformio run -e megaatmega2560
 
     # Upload firmware for the specific environment
-    > platformio run -e flora8 --target upload
+    > platformio run -e megaatmega2560 --target upload
 
     # Clean build files
     > platformio run --target clean
