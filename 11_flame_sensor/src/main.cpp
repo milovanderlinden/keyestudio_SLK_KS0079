@@ -3,7 +3,6 @@
 int flame = 0;// select analog pin 0 for the sensor
 int Beep = 9;// select digital pin 9 for the buzzer
 int val = 0;// initialize variable
-
 void setup() {
   pinMode(Beep,OUTPUT);// set LED pin as “output”
   pinMode(flame,INPUT);// set buzzer pin as “input”
